@@ -1,0 +1,315 @@
+.single-product-wrapp{
+    
+    input, select {
+        border: none;
+        outline: none;
+    }
+      .single-image-wrapp{
+        padding-top: 250px;
+        background-image: url(../images/Print.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding-bottom: 50px;
+        .single-product-image {
+             text-align: center;
+            img {
+                max-width: 200px;
+        
+              }
+        }
+      }
+
+      .single-product-info-wrapper {
+        padding-top: 250px;
+        //  max-width: 600px;
+         width: 80%;
+        margin: auto;
+        .single-product-title {
+            h2{
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+        .single-product-price{
+            p{
+                font-size: 35px;
+            }
+        }
+        .product-VariationType{
+            display: flex;
+            margin-top:15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            .product-variation-options{
+                margin-right: 20px;
+
+                label{
+                    color: #fff;
+                    display: block;
+                    width: 100%;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;
+                }
+                select{
+                    height: 60px;
+                    width: 340px;
+                    padding: 0 10px;
+                }
+            }
+            .product-qty {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: left;
+                align-items: baseline;
+                label {
+                    color: #fff;
+                    display: block;
+                    width: 100%;
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                    text-transform: uppercase;	
+                }
+                input {
+                    width: 60px;
+                    height: 60px;	
+                    font-size: 32px;
+                    text-align: center;
+                    border: none;
+                    outline: none;
+                    margin: 0 1px;
+                    // border: 1px solid $btn_grey;
+                }
+                button {
+                    width: 60px;  height: 60px;
+                    color: #000000;
+                    font-size: 32px;
+                    background-color: #fff;
+                    border: none;
+             
+                }
+            }
+            
+        
+        }
+        .single-add-to-cart{
+       
+            margin-bottom: 60px;
+            padding-top: 20px;
+        
+            .cart-btn{
+                background: $btn-primary-color;
+              border: none;
+              color: #fff;
+              font-size: 16px;
+              text-decoration: none;
+              padding: 20px 30px;
+              border: 1px solid $btn-primary-color;
+              &:hover{
+                background: transparent;
+                border: 1px solid #fff;
+              }
+              
+
+            }
+          }
+          .single-description{
+            margin: 20px 0;
+            p{
+                font-size: 16px;
+                
+            }
+          }
+          .single-info{
+            p{
+                font-size: 16px;
+                width: 90%;
+                margin-bottom: 25px;
+            }
+          }
+          .product-cart-info{
+            p{
+                font-size: 16px;
+                font-style: italic;
+                margin-bottom: 5px;
+            }
+          }
+      }
+
+}
+
+// products-varients
+.product-varients{
+    padding: 100px 0;
+    .section-title{
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 80px;
+
+        }
+    }
+     @include products-grid;
+    .product-varient-card{
+        position: relative;
+        transition: all ease-in-out .4s;
+        .hover-card-btn{
+                 position: absolute;
+                 height: 90%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                 transition: all ease-in-out .4s;
+            a{
+                background: $btn-primary-color;
+                color: #fff;
+                padding: 10px 15px;
+                text-decoration: none;
+                font-size: 16px;
+                 transition: all ease-in-out .4s;
+                margin-top: 20px;
+            }
+        }
+        &:hover{
+            .hover-card-btn{
+                opacity: 1;
+                a{
+                    margin-top: 0;
+                }
+            }
+        }
+      
+          
+    
+    }
+}
+
+
+.related-products{
+    padding: 100px 0;
+    background: url(../images/A-Tasteful-Adventure-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .related-product-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+    .section-title{
+        text-align: center;
+        img{
+            max-width: 60%;
+            margin: auto;
+        }
+    }
+    .related-products-row{
+        padding: 100px 0;
+       
+    }
+    .related-product-responsive{
+        padding: 50px 0;
+
+    }
+    
+}
+.related-product-wrapper{
+    .related-product-img{
+        text-align: center;
+        min-height: 450px;
+        img{
+            max-width: 60%;
+            margin: auto;
+        }
+    }
+    .related-product-content{
+        text-align: center;
+        padding: 0 15px;
+        .rl-title{
+            font-weight: bold;
+            margin-top: 10px;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+        .rl-description{
+            font-size: 12px;
+            line-height: 24px;
+            min-height: 70px;
+        }
+        .cart-btn-box{
+            text-align: center;
+            
+            .cart-btn{
+                background: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+  
+                padding: 10px 15px;
+                font-size: 16px;
+                text-transform: uppercase;
+                display: block;
+                transition: all ease-in 0.3s;
+                font-weight: 400;
+                margin: auto;
+                &:hover{
+                    background-color: $btn-primary-color;
+                    border: 1px solid $btn-primary-color;
+                } 
+            } 
+            
+        }
+    }
+}
+
+
+.about-us{
+    .about-us-contact{
+        width: 100%;
+        padding-right: 100px;
+        h2{
+            font-weight: 800;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .about-content-pera{
+            margin-bottom: 20px;
+            p{
+                font-size: 16px;
+                margin: 20px 0;
+                // line-height: 40px;
+                    font-weight: 400;
+                line-height: 2em;
+            }
+        }
+        .about-btn-box{
+          padding-top: 30px;
+            .about-btn{
+                background: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                font-size: 16px;
+                text-decoration: none;
+                top: 22px;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding: 10px 15px;
+                transition: all ease-in .3s;
+                cursor: pointer;
+                &:hover{
+                    background-color: $btn-primary-color;
+                    border: 1px solid $btn-primary-color;
+                } 
+            } 
+           
+        }
+    }
+}
+
+.related-product-responsive{
+    display: none;
+}

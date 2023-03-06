@@ -1,0 +1,18 @@
+$bg-body: #1F1F1F;
+$btn-primary-color:#E51F49;
+body{
+    position: relative;
+}
+@font-face {
+    font-family: 'prenton';
+    src: url('../fonts/Prenton\ Regular.otf');
+
+}
+input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+
+p,
+h2 {
+  color: #fff;}

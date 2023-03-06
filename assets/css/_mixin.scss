@@ -1,0 +1,77 @@
+@mixin media-query($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }
+}
+
+// @mixin media-q($args...) {
+//     @if length($args)==1 {
+//         @media screen and(max-width: nth($args, 1)) {
+//             @content;
+//         }
+//     }
+//     @if length($args)==2 {
+//         @media screen and (max-width: nth($args, 1)) and (min-width: nth($args, 2)) {
+//             @content;
+//         }
+//     }
+// }
+
+@mixin products-grid{
+    .product-varient-card{
+       
+        .varient-image-wrapp {
+            background: url(../images/overige-bieren-.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+            padding: 10px 0;
+            min-height: 380px;
+            img{
+                max-width: 180px;
+            }
+          }
+          .card-info{
+            text-align: left;
+            width: 80%;
+            margin: auto;
+            h2{
+                font-size: 18px;
+                font-weight: bold;
+                margin-top: 15px;
+            }
+          }
+          
+    
+    }
+}
+
+@mixin menu-hover{
+    a {
+        position: relative;
+         color: #fff;
+         text-decoration: none;
+         display: block;
+         font-size: 16px;
+         transition:all ease-in .5s;
+         transition-timing-function: cubic-bezier(.58,.3,.005,1);
+         &:before{
+           content: '';
+           position: absolute;
+         background:  #fff;
+         transition:all ease-in .3s;
+
+         width: 100%;
+         height: 1px;
+         bottom: -5px;
+         opacity: 0;
+         }
+         &:hover::before{
+           opacity: 1;
+         }
+        .active::before{
+         opacity: 1;
+        }
+       }
+}
